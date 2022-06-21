@@ -122,7 +122,7 @@ function navHighlighter(){
     $form.addEventListener("submit",(e) => {
         e.preventDefault();
         $loader.classList.remove("none");
-        fetch("https://formsubmit.co/juan.falco21@gmail.com",{
+        fetch("https://formsubmit.co/ajax/juan.falco21@gmail.com",{
             method:"POST",
             body:new FormData(e.target),
         })
