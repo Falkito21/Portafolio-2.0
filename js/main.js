@@ -116,13 +116,13 @@ function navHighlighter(){
 /****** CONTACTO-FORMULARIO ******/
 ((d) => {
     const $form = d.querySelector(".contacto_formulario");
-    // $loader = d.querySelector(".contact-form-loader"),
-    // $response = d.querySelector(".contactacto-formulario-responde");
+    $loader = d.querySelector(".contact-form-loader"),
+    $response = d.querySelector(".contactacto-formulario-responde");
 
     $form.addEventListener("submit",(e) => {
         e.preventDefault();
-        // $loader.classList.remove("none");
-        fetch("https://formsubmit.co/ajax/juan.falco21@gmail.com",{
+        $loader.classList.remove("none");
+        fetch("https://formsubmit.co/juan.falco21@gmail.com",{
             method:"POST",
             body:new FormData(e.target),
         })
