@@ -56,3 +56,43 @@ function proyectoItemDetalles(proyectoItem){
     document.querySelector(".proyecto_emergente-subtitulo span").innerHTML = proyectoItem.querySelector(".proyecto_titulo").innerHTML;
     document.querySelector(".proyecto_emergente-cuerpo").innerHTML = proyectoItem.querySelector(".proyecto_item-datalles").innerHTML;
 }
+
+// INPUT ANIMACION
+const inputs = document.querySelectorAll(".input");
+function focusFunc(){
+    let span = this.parentNode;
+    span.classList.add("focus");
+}
+function blurFunc(){
+    let span = this.parentNode;
+    if(this.value == ""){
+        span.classList.remove("focus");
+    }
+}    
+inputs.forEach((input) => {
+    input.addEventListener("focus", focusFunc)
+    input.addEventListener("blur", blurFunc)
+})
+
+// ACTIVACION DE LINKS AL CAMBIAR DE SECCION
+const seccion = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter(){
+    let scrollY = window.pageYOffset;
+
+    seccion.forEach(current => {
+        const seccionHeight = current.offsetHeight;
+        const seccionTop = current.offsetTop -50,
+        seccionId = current.getAttribute("id");
+
+        if(scrollY > seccionTop && scrollY <= seccionTop + seccionHeight)
+        {
+            document.querySelector('.nav_menu a[href*=' + seccionId + ']').classList.add("active-link")
+        }
+        else{
+            document.querySelector('.nav_menu a[href*=' + seccionId + ']').classList.remove("active-link")
+        }
+    })
+}

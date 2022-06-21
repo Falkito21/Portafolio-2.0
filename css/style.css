@@ -638,3 +638,188 @@ input{
     text-transform: lowercase;
     color: var(--comp-color);
 }
+/* SECCION CONTACTO */
+.contacto_container{
+    display: grid;
+    grid-template-columns: 300px 340px;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.contacto_info{
+    display: grid;
+    row-gap: 1rem;
+}
+.contacto_tarjeta{
+    background-color: var(--caja-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.contacto_tarjeta-icon{
+    font-size: 1.8rem;
+    color: var(--titulo-color);
+    margin-bottom: var(--mb-0-25);
+}
+.contacto_tarjeta-titulo,
+.contacto_tarjeta-data{
+    font-size: var(--pequena-fuente-tamano);
+}
+.contacto_tarjeta-titulo{
+    font-weight: var(--mediana-fuente);
+}
+.contacto_boton{
+    color: var(--comp-color);
+    font-size: var(--pequena-fuente-tamano);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+.contacto_boton-icon{
+    font-size: 1rem;
+    transition: .3s;
+}
+.contacto_boton:hover .contacto_boton-icon{
+    transform: translateX(.25rem);
+}
+.input_contenedor{
+    position: relative;
+    margin-top: .1rem;
+    margin-bottom: 1.9rem;
+}
+.input{
+    width: 100%;
+    border: 2px solid var(--text-color);
+    background-color: transparent;
+    padding: .6rem 1.2rem;
+    color: var(--titulo-color);
+    font-weight: var(--mediana-fuente);
+    font-size: var(--normal-fuente-tamano);
+    letter-spacing: .5px;
+    outline: none;
+    border-radius: .50rem;
+    transition: .3s;
+}
+textarea.input{
+    padding: .8rem 1.2rem;
+    min-height: 140px;
+    border-radius: .50rem;
+    resize: none;
+}
+.input_contenedor label{
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    padding: 0 .4rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: var(--mediana-fuente);
+    pointer-events: none;
+    z-index: 1000;
+    transition: .5s;
+}
+.input_contenedor.textarea label{
+    top: 1rem;
+    transform: translateY(0);
+}
+.input_contenedor span{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    color: transparent;
+    transform: translateY(-50%);
+    font-size: var(--pequena-fuente-tamano);
+    padding: 0 .4rem;
+    pointer-events: none;
+    z-index: 500;
+}
+.input_contenedor span::before,
+.input_contenedor span::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 5px;
+    opacity: 0;
+    background-color: var(--cuerpo-color);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+.input_contenedor span::before{
+    left: 50%;
+}
+.input_contenedor span::after{
+    right: 50%;
+}
+.input_contenedor.focus label{
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: var(--pequena-fuente-tamano);
+}
+.input_contenedor.focus span::before,
+.input_contenedor.focus span::after{
+    width: 50%;
+    opacity: 1;
+}
+/* FOOTER */
+.footer{
+    padding-top: 2rem;
+}
+.footer_container{
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.6rem;
+}
+.footer_bg{
+    background-color: var(--caja-color);
+    padding: 3rem 0 3.5rem;
+}
+.footer_titulo{
+    font-size: var(--h1-fuente-tamano);
+    margin-bottom: var(--mb-0-25);
+}
+.footer_subtitulo{
+    font-size: var(--pequena-fuente-tamano);
+}
+.footer_links{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+.footer_link:hover{
+    color: var(--comp-color);
+}
+.footer_redes{
+    justify-self: flex-end;
+}
+.footer_redes{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+.footer_redes:hover{
+    color: var(--comp-color);
+}
+.footer_copy{
+    font-size: var(--pequena-fuente-tamano);
+    text-align: center;
+    margin-top: 4.5rem;
+}
+.footer_titulo,
+.footer_subtitulo,
+.footer_link,
+.footer_redes{
+    color: var(--titulo-color);
+}
+/* SCROLL BAR */
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-pulgar-color);
+    border-radius: .5rem;
+}
