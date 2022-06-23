@@ -63,6 +63,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -1017,6 +1018,26 @@ textarea.input{
     }
 }
 @media screen and (max-width: 570px){
+    
+    *{
+        overflow-x: hidden;
+    }
+    .inicio_social-seguir{
+        display: flex;
+        padding-left: 6rem;
+        padding-bottom: 2rem;
+        /* padding: 1rem; */
+    }
+    .inicio_social-links{
+        display: grid;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        grid-template-rows: repeat(3,1fr);
+        
+        }
+    .lineaTiempo_item{
+        overflow: hidden;
+    }
     .nav_toggle{
         right: initial;
         left: 1.5rem;
@@ -1028,18 +1049,33 @@ textarea.input{
         padding: 7rem 0 2rem;
     }
     .inicio_container{
+        /* display: flex;
+        flex-direction: column;
+        width: 100%; */
         row-gap: 2rem;
+        display: grid ;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .inicio_social{
+        display: flex;
+        justify-self: center;
     }
     .inicio_img{
+        /* display: flex; */
+        /* flex-direction: row; */
         display: block;
         width: 250px;
-        justify-self: center;
+        /* align-self: flex-start; */
     }
     .inicio_social{
         left: initial;
         right: -1rem;
         flex-direction: column;
         row-gap: 3.5rem;
+        /* display: flex;
+        align-self: flex-start;
+        justify-self: flex-start; */
+        padding-right: 2rem;
     }
     .inicio_social-seguir{
         font-size: var(--pequena-fuente-tamano);
@@ -1072,7 +1108,7 @@ textarea.input{
         justify-self: flex-start;
     }
 }
-@media screen and (width: 350px){
+@media screen and (max-width: 350px){
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -1085,6 +1121,16 @@ textarea.input{
     }
     .inicio_subtitulo{
         font-size: var(--normal-fuente-tamano);
+    }
+    .inicio_social-seguir{
+        display: flex;
+        padding-left: 6rem;
+        padding-bottom: 2rem;
+        color: var(--comp-color);
+        /* padding: 1rem; */
+    }
+    .inicio_social-links .uil{
+        color: var(--comp-color);
     }
     .acerca_info{
         grid-template-columns: repeat(2,1fr);
