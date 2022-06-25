@@ -236,9 +236,9 @@ input{
 
 /* seccion inicio */
 .inicio{
-    background: url("../img/juan.jpg");
+    background: url("../img/zyro-image.png");
     background-size: cover;
-    background-position: center center;
+    background-position: flex-start center;
     height: 100vh;
 }
 .inicio_container{
@@ -967,6 +967,10 @@ input{
         padding-left: 6rem;
         padding-bottom: 2rem;
         /* padding: 1rem; */
+    }
+    .inicio_social span,
+    .inicio_social i{
+        color: #fff;
     }
     .inicio_social-links{
         display: grid;
