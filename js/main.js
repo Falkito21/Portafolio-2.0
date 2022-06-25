@@ -1,15 +1,45 @@
 // BOTON SIDEBAR
 const navMenu = document.getElementById('sidebar'),
 navToggle = document.getElementById('nav-toggle'),
+btn = document.getElementById('click'),
+btn1 = document.getElementById('click1'),
+btn2 = document.getElementById('click2'),
+btn3 = document.getElementById('click3'),
+btn4 = document.getElementById('click4'),
 navCerrar = document.getElementById('nav-cerrar')
 
 if(navToggle){
     navToggle.addEventListener("click", () => {
-        navMenu.classList.add('mostrar-sidebar')
+        navMenu.classList.add('mostrar-sidebar') 
     })
 }
 if(navCerrar){
     navCerrar.addEventListener("click", () => {
+        navMenu.classList.remove('mostrar-sidebar')
+    })
+}
+if(btn){
+    btn.addEventListener("click", () => {
+        navMenu.classList.remove('mostrar-sidebar')
+    })
+}
+if(btn1){
+    btn1.addEventListener("click", () => {
+        navMenu.classList.remove('mostrar-sidebar')
+    })
+}
+if(btn2){
+    btn2.addEventListener("click", () => {
+        navMenu.classList.remove('mostrar-sidebar')
+    })
+}
+if(btn3){
+    btn3.addEventListener("click", () => {
+        navMenu.classList.remove('mostrar-sidebar')
+    })
+}
+if(btn4){
+    btn4.addEventListener("click", () => {
         navMenu.classList.remove('mostrar-sidebar')
     })
 }
@@ -33,6 +63,7 @@ const pestanas = document.querySelectorAll('[data-target]'),
                 pestana.classList.add('skills_active')
             })
         })
+
 
 //          FILTRO MIXITUP PROYECTO 
 let mixerProyecto = mixitup('.proyecto_container',{
