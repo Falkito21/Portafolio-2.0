@@ -236,9 +236,9 @@ input{
 
 /* seccion inicio */
 .inicio{
-    background: url("../img/zyro-image.png");
+    background: url("../img/perfil2.jpg");
     background-size: cover;
-    background-position: flex-start center;
+    background-position: center center;
     height: 100vh;
 }
 .inicio_container{
