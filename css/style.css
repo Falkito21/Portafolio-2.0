@@ -1040,6 +1040,7 @@ input{
         justify-content: flex-end;
         align-items: center;
         padding: 2rem;
+        z-index: -2;
     }
     .compartir #btn_comp{
         cursor: pointer;
