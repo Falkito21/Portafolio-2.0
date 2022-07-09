@@ -1035,7 +1035,7 @@ input{
         font-size: 1.2rem;
     }
     .compartir{
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
@@ -1069,16 +1069,7 @@ input{
     .footer_links{
         justify-self: flex-start;
     }
-    .ventana{
-        opacity: 1;
-        position: absolute;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, .5);
-    }
+ 
 }
 @media screen and (max-width: 350px){
     .container{
