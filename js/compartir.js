@@ -7,11 +7,11 @@ if('share' in navigator){
             text: 'Bienvenidos a mi Portafolios',
             url:'https://portafolio-juan-falco.netlify.app/'
         })
-        // .then(() => {
-        //     alert('El portafolio se esta compartiendo')
-        // })
-        // .catch(() =>{
-        //     alert('Error al compartir el portafolios')
-        // })
+        .then(() => {
+            alert('Gracias por compartir!')
+        })
+        .catch(() =>{
+            alert('Error al compartir el portafolios')
+        })
     }
 }
