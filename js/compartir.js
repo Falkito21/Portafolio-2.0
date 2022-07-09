@@ -5,7 +5,7 @@ if('share' in navigator){
         navigator.share({
             title: 'Portafolios Juan A.Falco',
             text: 'Bienvenidos a mi Portafolios',
-            url:'https://portafolio-juan-falco.netlify.app/'
+            url:'../img/juan_foto2.jpg',
         })
         // .then(() => {
         //     alert('El portafolio se esta compartiendo')
