@@ -7,7 +7,7 @@ btn2 = document.getElementById('click2'),
 btn3 = document.getElementById('click3'),
 btn4 = document.getElementById('click4'),
 navCerrar = document.getElementById('nav-cerrar')
-
+document.addEventListener("DOMContentLoaded", function() { 
 if(navToggle){
     navToggle.addEventListener("click", () => {
         navMenu.classList.add('mostrar-sidebar') 
@@ -144,3 +144,4 @@ function navHighlighter(){
     })
 }
 
+});

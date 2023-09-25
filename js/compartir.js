@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 const $btn = document.querySelector('#btn_comp')
 $btn.addEventListener('click', share)
 if('share' in navigator){
@@ -15,3 +16,4 @@ if('share' in navigator){
         })
     }
 }
+});
