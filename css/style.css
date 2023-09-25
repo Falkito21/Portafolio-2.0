@@ -236,7 +236,7 @@ input{
 
 /* seccion inicio */
 .inicio{
-    background: url("../img/zyro-image.png");
+    background: url("../img/52921.jpg");
     background-size: cover;
     background-position: center start;
     height: 100vh;
@@ -266,7 +266,7 @@ input{
     position: absolute;
     width: 1rem;
     height: 2px;
-    background-color: #222;
+    background-color: #fff;
     right: -45%;
     top: 50%;
 }
@@ -275,6 +275,11 @@ input{
     column-gap: 1rem;
     overflow: hidden;
 }
+.inicio_social i
+,.inicio_social span{
+    color: var(--titulo-color);
+}
+
 .inicio_social-link{
     font-size: 1.5rem;
     color: #222;
@@ -408,8 +413,8 @@ input{
 
 /* Seccion Aptitudes */
 .aptitudes_container{
-    grid-template-columns: repeat(2, 340px);
-    column-gap: 3rem;
+    grid-template-columns: repeat(3, 260px);
+    column-gap: 5rem;
     justify-content: center;
 }
 .aptitudes_titulo{
@@ -970,7 +975,6 @@ input{
         display: flex;
         padding-left: 6rem;
         padding-bottom: 2rem;
-        /* padding: 1rem; */
     }
     .inicio_social span,
     .inicio_social i{
